@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1> My To Do List</h1>
+
+    <form class="add-task">
+        <input name="content" type="text" placeholder="e.g. 下午记得买菜" autofocus="" autocomplete="off" data-cip-id="cIPJQ342845639">
+        <button type="submit">submit</button>
+    </form>
+    <div class="task-list">
+        <div class="task-item">
+            <span>
+                <input type="checkbox">
+            </span>
+            <span class="task=content"> item content </span>
+            <span class="fr">
+                <span class="action-delete">delete</span>
+                <span class="action-detail">detail</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="task-detail-mask"></div>
+    <div class="task-detail"></div>
+</div>
+<script src="lib/jquery.js"></script>
+<script src="lib/store.js"></script>
+<script src="js/base.js"></script>
+</body>
+
+</html>
